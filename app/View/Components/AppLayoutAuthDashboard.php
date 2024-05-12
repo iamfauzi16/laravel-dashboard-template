@@ -4,17 +4,16 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class AppLayoutDashboard extends Component
+class AppLayoutAuthDashboard extends Component
 {
     /**
      * Create a new component instance.
      *
      * @return void
      */
-    public $title;
-    public function __construct($title = 'Home')
+    public function __construct()
     {
-        $this->title = $title;
+        //
     }
 
     /**
@@ -24,6 +23,6 @@ class AppLayoutDashboard extends Component
      */
     public function render()
     {
-        return view('components.app-layout-dashboard');
+        return view('components.app-layout-auth-dashboard');
     }
 }
